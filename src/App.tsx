@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useLocation, BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
@@ -8,11 +8,20 @@ import Catalog from './pages/Catalog';
 import Pricelist from './pages/Pricelist';
 import Community from './pages/Community';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   const [cartOpen, setCartOpen] = useState(false);
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="min-h-screen bg-cream-50 text-warm-900">
         <Navbar onCartOpen={() => setCartOpen(true)} />
         <Routes>
