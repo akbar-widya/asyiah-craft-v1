@@ -11,6 +11,8 @@ export default function Home() {
   const [waNumber, setWaNumber] = useState('6281234567890');
 
   useEffect(() => {
+    if (!supabase) return;
+
     supabase
       .from('settings')
       .select('whatsapp_number')

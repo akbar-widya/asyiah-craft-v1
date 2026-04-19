@@ -23,7 +23,6 @@ export default function Footer() {
               { label: 'Katalog', to: '/catalog' },
               { label: 'Pricelist', to: '/pricelist' },
               { label: 'Komunitas', to: '/community' },
-              { label: 'Tentang Kami', to: '/about' },
             ].map((l) => (
               <li key={l.to}>
                 <Link

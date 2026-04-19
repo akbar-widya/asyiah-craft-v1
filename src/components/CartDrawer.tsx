@@ -11,7 +11,7 @@ type CartDrawerProps = {
 
 export default function CartDrawer({ open, onClose }: CartDrawerProps) {
   const [items, setItems] = useState<CartItem[]>([]);
-  const [waNumber, setWaNumber] = useState('6281234567890');
+  const [waNumber, setWaNumber] = useState('62895325673255');
 
   useEffect(() => {
     setItems(getCart());
@@ -21,6 +21,8 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
   }, [open]);
 
   useEffect(() => {
+    if (!supabase) return;
+
     supabase
       .from('settings')
       .select('whatsapp_number')

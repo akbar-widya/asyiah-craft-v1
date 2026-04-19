@@ -7,6 +7,11 @@ export default function Pricelist() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!supabase) {
+      setLoading(false);
+      return;
+    }
+
     supabase
       .from('settings')
       .select('pricelist_image_url')
