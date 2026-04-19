@@ -1,7 +1,9 @@
+import { useSettings } from '../hooks/useSettings';
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 
 export default function Footer() {
+  const settings = useSettings();
   return (
     <footer className="bg-warm-800 text-cream-200 py-10 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -45,7 +47,7 @@ export default function Footer() {
             Order & pertanyaan via WhatsApp
           </p>
           <a
-            href="https://wa.me/6281234567890"
+            href={`https://wa.me/${settings.whatsapp_number}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-2 bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2 rounded-full transition-colors"

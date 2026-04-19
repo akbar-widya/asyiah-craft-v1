@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { ImageOff } from 'lucide-react';
 import { supabase } from '../lib/supabase';
+import { useSettings } from '../hooks/useSettings';
 
 export default function Pricelist() {
+  const settings = useSettings();
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -57,7 +59,7 @@ export default function Pricelist() {
                 </p>
               </div>
               <a
-                href="https://wa.me/6281234567890"
+                href={`https://wa.me/${settings.whatsapp_number}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors"
