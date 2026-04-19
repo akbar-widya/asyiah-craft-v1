@@ -23,6 +23,7 @@ export default function Footer() {
               { label: 'Katalog', to: '/catalog' },
               { label: 'Pricelist', to: '/pricelist' },
               { label: 'Komunitas', to: '/community' },
+              { label: 'Tentang Kami', to: '/about' },
             ].map((l) => (
               <li key={l.to}>
                 <Link
@@ -59,6 +60,9 @@ export default function Footer() {
         <p className="flex items-center gap-1">
           Dibuat dengan <Heart size={12} className="text-red-400 fill-red-400" /> oleh Asyiah
         </p>
+        <Link to="/admin/login" className="text-cream-300 hover:text-cream-100 transition-colors underline">
+            Masuk Admin
+        </Link>
       </div>
     </footer>
   );

@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Catalog from './pages/Catalog';
 import Pricelist from './pages/Pricelist';
 import Community from './pages/Community';
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +28,8 @@ function App() {
         <Navbar onCartOpen={() => setCartOpen(true)} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/pricelist" element={<Pricelist />} />
           <Route path="/community" element={<Community />} />
