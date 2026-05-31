@@ -86,7 +86,7 @@ export default function AdminDashboard() {
   if (!session) return null;
 
   return (
-    <main className="min-h-screen bg-cream-50 py-12 px-4">
+    <main className="min-h-screen bg-cream-50 py-12 px-4 pt-20">
       <div className="max-w-md mx-auto space-y-6">
         <div className="flex justify-between items-center">
           <h1 className="font-serif text-xl font-bold text-warm-900">
