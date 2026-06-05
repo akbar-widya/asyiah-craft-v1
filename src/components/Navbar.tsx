@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSettings } from '../hooks/useSettings';
 import { ShoppingBag, Menu, X, MessageCircle } from 'lucide-react';
 import type { CartItem } from '../lib/types';
@@ -22,6 +22,7 @@ export default function Navbar({ onCartOpen }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -47,7 +48,7 @@ export default function Navbar({ onCartOpen }: NavbarProps) {
     if (location.pathname === '/') {
       document.getElementById('cara-order')?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.location.href = '/#cara-order';
+      navigate('/#cara-order');
     }
     setMenuOpen(false);
   };

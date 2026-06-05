@@ -3,16 +3,16 @@ import { Users, ArrowRight } from 'lucide-react';
 
 const communities = [
   {
-    name: 'Klub Rajut Indonesia',
-    desc: 'Komunitas para pecinta rajut dari seluruh Indonesia. Berbagi inspirasi, pola, dan dukungan satu sama lain.',
+    name: 'Komunitas Rajut & Kriya Kreatif Purwokerto',
+    desc: 'Wadah kolaborasi pengrajin rajut di Purwokerto yang dirintis sejak tahun 2018 untuk melatih keterampilan kriya tekstil.',
     icon: '🧶',
-    members: '1.200+ anggota',
+    members: 'Dirintis sejak 2018',
   },
   {
-    name: 'Rumah BUMN',
-    desc: 'Mitra resmi program pemberdayaan UMKM dari Kementerian BUMN untuk pengembangan kerajinan lokal.',
+    name: 'Rumah BUMN Purwokerto',
+    desc: 'Pusat inkubasi bisnis dan standardisasi produk yang dikelola secara resmi oleh Bank BRI Cabang Purwokerto.',
     icon: '🏛️',
-    members: 'Program Nasional',
+    members: '110 Binaan Go-Online',
   },
 ];
 
