@@ -1,43 +1,36 @@
 import { Users, Award, Heart, CheckCircle } from 'lucide-react';
 
 const klubRajut = {
-  name: 'Klub Rajut Indonesia',
-  tagline: 'Bersama Kita Berkreasi',
-  desc: `Klub Rajut Indonesia adalah komunitas yang menyatukan para pecinta dan praktisi rajut dari
-    Sabang sampai Merauke. Lahir dari semangat berbagi dan berkolaborasi, komunitas ini telah
-    menjadi wadah bagi lebih dari seribu anggota aktif yang saling menginspirasi.`,
+  name: 'Komunitas Rajut & Kriya Kreatif Purwokerto',
+  tagline: 'Merajut Keterampilan, Mengukir Kemandirian Ekonomi',
+  desc: `Wadah kolaborasi pengrajin rajut di Purwokerto yang dirintis sejak tahun 2018 untuk melatih keterampilan kriya tekstil. Komunitas ini fokus memberdayakan ibu rumah tangga dengan memanfaatkan bahan ramah lingkungan dan barang sisa menjadi karya seni fungsional yang bernilai tinggi.`,
   details: [
-    'Forum diskusi teknik rajut dari pemula hingga mahir',
-    'Sharing pola rajut gratis setiap minggu',
-    'Workshop online dan offline rutin setiap bulan',
-    'Pameran karya anggota setiap kuartal',
-    'Program mentoring 1-on-1 untuk pemula',
+    'Pelatihan teknis terstruktur dari tingkat dasar hingga mahir (pembuatan tas, pola dekoratif, hingga boneka rajut)',
+    'Pelatihan rajut kolaboratif bersama lembaga kemasyarakatan tingkat daerah (seperti TP-PKK)',
+    'Akses keikutsertaan dalam festival kerajinan daerah, seperti pameran Craftopia Banyumas',
+    'Aktivitas komunal yang memberikan dampak terapeutik untuk mengurangi stres dan melatih motorik halus pengrajin',
   ],
   stats: [
-    { label: 'Anggota Aktif', value: '1.200+' },
-    { label: 'Kota di Indonesia', value: '45+' },
-    { label: 'Workshop Dilakukan', value: '80+' },
+    { label: 'Tahun Dirintis', value: '2018' },
+    { label: 'Teknik Utama', value: 'Rajut & Hakpen' },
+    { label: 'Karya per Bulan', value: '20+' },
   ],
 };
 
 const rumahBUMN = {
-  name: 'Rumah BUMN',
-  tagline: 'Memberdayakan UMKM Lokal',
-  desc: `Rumah BUMN adalah program strategis dari Kementerian BUMN Republik Indonesia yang
-    bertujuan memberdayakan Usaha Mikro, Kecil, dan Menengah (UMKM) agar mampu bersaing
-    di era digital. Asyiah Craft dengan bangga bergabung sebagai mitra dalam program
-    pemberdayaan kerajinan tangan lokal ini.`,
+  name: 'Rumah BUMN Purwokerto',
+  tagline: 'UMKM Tangguh, Mandiri, Modern, Go Online, Go Global',
+  desc: `Pusat inkubasi bisnis dan standardisasi produk yang dikelola secara resmi oleh Bank BRI Cabang Purwokerto. Lembaga ini difokuskan pada pendampingan legalitas, pengembangan kompetensi produksi, dan kemudahan akses permodalan maupun pemasaran digital untuk pelaku usaha kreatif.`,
   details: [
-    'Pelatihan digital marketing dan e-commerce',
-    'Pendampingan legalitas usaha dan HAKI',
-    'Akses pasar ke platform belanja nasional',
-    'Dukungan pembiayaan usaha mikro',
-    'Sertifikasi produk SNI dan halal',
+    'Pelatihan intensif terkait digitalisasi e-commerce, manajemen keuangan, dan optimalisasi media sosial',
+    'Fasilitas ruang pameran (Showcase UMKM fisik) untuk memajang produk unggulan secara gratis dengan sistem konsinyasi',
+    'Pendaftaran dan pengintegrasian produk UMKM ke platform Pasar Digital (PaDi) BUMN untuk akses pengadaan korporat nasional',
+    'Pendampingan sertifikasi legalitas usaha dan rekomendasi keikutsertaan pada ajang pameran besar berskala nasional seperti Brilian Preneur',
   ],
   stats: [
-    { label: 'UMKM Binaan', value: '50.000+' },
-    { label: 'Provinsi Terjangkau', value: '34' },
-    { label: 'Tahun Berdiri', value: '2019' },
+    { label: 'UMKM di Banyumas', value: '90.000+' },
+    { label: 'Binaan Go-Online', value: '110' },
+    { label: 'Pendampingan Berhasil', value: '87,12%' },
   ],
 };
 
