@@ -11,7 +11,7 @@ type CartDrawerProps = {
 
 export default function CartDrawer({ open, onClose }: CartDrawerProps) {
   const [items, setItems] = useState<CartItem[]>([]);
-  const [waNumber, setWaNumber] = useState('62895325673255');
+  const [waNumber, setWaNumber] = useState('6281392470669');
 
   useEffect(() => {
     setItems(getCart());

@@ -63,8 +63,16 @@ export default function Navbar({ onCartOpen }: NavbarProps) {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="font-serif text-xl font-bold text-warm-700 tracking-wide">
-            Asyiah Craft
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 font-serif text-xl font-bold text-warm-700 tracking-wide"
+          >
+            <img 
+              src="assets/logo.jpg" 
+              alt="Logo Asyiah Craft" 
+              className="w-8 h-8 rounded-full object-cover"
+            />
+            <span>Asyiah Craft</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">

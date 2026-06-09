@@ -107,7 +107,7 @@ export default function AdminDashboard() {
             value={whatsapp}
             onChange={(e) => setWhatsapp(e.target.value)}
             className="w-full border border-warm-200 rounded-lg px-4 py-2 text-sm text-warm-900 bg-cream-50"
-            placeholder="628123456789"
+            placeholder="6281392470669"
           />
           <button
             onClick={saveWhatsapp}

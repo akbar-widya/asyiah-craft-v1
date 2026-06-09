@@ -4,7 +4,7 @@ import { Settings } from '../lib/supabase';
 
 const FALLBACK: Settings = {
   id: 1,
-  whatsapp_number: '6281234567890',
+  whatsapp_number: '6281392470669',
   pricelist_image_url: null,
   updated_at: '',
 };
